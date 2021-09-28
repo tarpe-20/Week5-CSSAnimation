@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b7567;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: 'Lobster', cursive;
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    position: relative;
+    animation-name: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header {
+    0% {top: -100px}
+    100% {top: 150px;}
+}
+
+.main {
+    margin: 2rem 0;
+}
+
+.text-left {
+    text-align: justify;
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+.text-right {
+    margin-top: 2rem;
+    text-align: right;
+    position: relative;
+    animation: textRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textRight {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
+}
+
+.footer {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    opacity: 0;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 1rem;
+    text-transform: uppercase;
+    animation-name: aniBtn;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
